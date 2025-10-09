@@ -10,10 +10,15 @@ public class ifCetakKRS21 {
         System.out.print("Apakah UKT sudah lunas? (true/false) :");
         boolean uktLunas = Akbar21.nextBoolean();
 
-    String pesan= (uktLunas) 
-            ? "pembayaran UKT terverivikasi.\nSilakan cetak KRS dan minta tanda tangan DPA."
-            : "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu";
-    System.out.println(pesan);
+    if (uktLunas) {
+        System.out.println("Pembayaran ukt terverivikasi");
+         System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
+    } 
+    else {
+        System.out.println("Registrasi ditolak");
+         System.out.println("Silakan melunasi UKT terlebih dahulu");
+        
+    }
     }
 }
        
