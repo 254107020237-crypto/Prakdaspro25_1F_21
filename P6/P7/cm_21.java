@@ -14,97 +14,109 @@ public class cm_21 {
         System.out.println("Masukkan nilai angka (0-100)");
         System.out.print("1. Pancasila\t:");
         int angka= Akbar21.nextInt();
-        String angkaP= Akbar21.nextLine().trim();
         System.out.print("2. Dasar Pemrograman\t:");
         int nilai= Akbar21.nextInt();
-        String nilaiD= Akbar21.nextLine().trim();
         System.out.print("3. Bahasa Inggris 1\t: ");
         int Masukkan= Akbar21.nextInt();
-        String MasukkanB= Akbar21.nextLine().trim();
 
-       if (angka > 80 && angka <=100) {
-        System.out.println("Nilai huruf = A");
-       } else if (angka >73 && angka <=80) {
-        System.out.println("Nilai huruf = B+");
-       } else if (angka >65 && angka<=73) {
-        System.out.println("Nilai huruf = B");
-       } else if (angka >60 && angka<=65) {
-        System.out.println("Nilai huruf = C+");
-       } else if (angka >50 && angka<=60) {
-        System.out.println("Nilai huruf = C");
-       } else if (angka >39 && angka<=50) {
-        System.out.println("Nilai huruf = D");
-       }
+        String nilaihurufP, nilaihurufD, nilaihurufB;
+        if (angka > 80 && angka <= 100){    
+            nilaihurufP = "A";
+        }else if(angka > 73 && angka <=80){
+            nilaihurufP = "B+";
+        }else if(angka > 65 && angka <= 73){
+            nilaihurufP = "B";
+        }else if(angka > 60 && angka <= 65){
+            nilaihurufP = "C+";
+        }else if(angka > 50 && angka <= 60){
+            nilaihurufP = "C";
+        }else if(angka > 39 && angka <= 50){
+            nilaihurufP = "D";
+        }else{
+            nilaihurufP = "E";
+        }
 
-        if (nilai > 80 && nilai <=100) {
-        System.out.println("Nilai huruf = A");
-       } else if (nilai >73 && nilai <=80) {
-        System.out.println("Nilai huruf = B+");
-       } else if (nilai >65 && nilai<=73) {
-        System.out.println("Nilai huruf = B");
-       } else if (nilai >60 && nilai<=65) {
-        System.out.println("Nilai huruf = C+");
-       } else if (nilai >50 && nilai<=60) {
-        System.out.println("Nilai huruf = C");
-       } else if (nilai >39 && nilai<=50) {
-        System.out.println("Nilai huruf = D");
-       }
+        if (nilai > 80 && nilai <= 100){    
+            nilaihurufD = "A";
+        }else if(nilai > 73 && nilai <=80){
+            nilaihurufD = "B+";
+        }else if(nilai > 65 && nilai <= 73){
+            nilaihurufD = "B";
+        }else if(nilai > 60 && nilai <= 65){
+            nilaihurufD = "C+";
+        }else if(nilai > 50 && nilai <= 60){
+            nilaihurufD = "C";
+        }else if(nilai > 39 && nilai <= 50){
+            nilaihurufD = "D";
+        }else{
+            nilaihurufD = "E";
+        }
 
-        if (Masukkan > 80 && Masukkan <=100) {
-        System.out.println("Nilai huruf = A");
-       } else if (Masukkan >73 && Masukkan <=80) {
-        System.out.println("Nilai huruf = B+");
-       } else if (Masukkan >65 && Masukkan<=73) {
-        System.out.println("Nilai huruf = B");
-       } else if (Masukkan >60 && Masukkan<=65) {
-        System.out.println("Nilai huruf = C+");
-       } else if (Masukkan >50 && Masukkan<=60) {
-        System.out.println("Nilai huruf = C");
-       } else if (Masukkan >39 && Masukkan<=50) {
-        System.out.println("Nilai huruf = D");
-       }
+        if (Masukkan > 80 && Masukkan <= 100){    
+            nilaihurufB = "A";
+        }else if(Masukkan > 73 && Masukkan <=80){
+            nilaihurufB = "B+";
+        }else if(Masukkan > 65 && Masukkan <= 73){
+            nilaihurufB = "B";
+        }else if(Masukkan > 60 && Masukkan <= 65){
+            nilaihurufB = "C+";
+        }else if(Masukkan > 50 && Masukkan <= 60){
+            nilaihurufB = "C";
+        }else if(Masukkan > 39 && Masukkan <= 50){
+            nilaihurufB = "D";
+        }else{
+            nilaihurufB = "E";
+        }
 
-         if(angkaP.equals("A")) {
-        System.out.println("Nilai setara = 4");
-       } else if (angkaP.equals("B+")) {
-        System.out.println("Nilai setara = 3,5");
-       } else if (angkaP.equals("B")) {
-        System.out.println("Nilai setara = 3");
-       } else if (angkaP.equals("C+")) {
-        System.out.println("Nilai setara = 2,5");
-       } else if (angkaP.equals("C")) {
-        System.out.println("Nilai setara = 2");
-       } else if (angkaP.equals("D")) {
-        System.out.println("Nilai setara = 1");
-       }
+        double nilaisetaraP, nilaisetaraD, nilaisetaraB;
+        if(nilaihurufP.equals("A")){
+            nilaisetaraP = 4;
+        }else if(nilaihurufP.equals("B+")){
+            nilaisetaraP = 3.5;
+        }else if(nilaihurufP.equals("B")){
+            nilaisetaraP = 3;
+        }else if(nilaihurufP.equals("C+")){
+            nilaisetaraP = 2.5;
+        }else if(nilaihurufP.equals("C")){
+            nilaisetaraP = 2;
+        }else if(nilaihurufP.equals("D")){
+            nilaisetaraP = 1;
+        }else{
+            nilaisetaraP = 0;
+        }
 
-        if(nilaiD.equals("A")) {
-        System.out.println("Nilai setara = 4");
-       } else if (nilaiD.equals("B+")) {
-        System.out.println("Nilai setara = 3,5");
-       } else if (nilaiD.equals("B")) {
-        System.out.println("Nilai setara = 3");
-       } else if (nilaiD.equals("C+")) {
-        System.out.println("Nilai setara = 2,5");
-       } else if (nilaiD.equals("C")) {
-        System.out.println("Nilai setara = 2");
-       } else if (nilaiD.equals("D")) {
-        System.out.println("Nilai setara = 1");
-       }
+        if(nilaihurufD.equals("A")){
+            nilaisetaraD = 4;
+        }else if(nilaihurufD.equals("B+")){
+            nilaisetaraD = 3.5;
+        }else if(nilaihurufD.equals("B")){
+            nilaisetaraD = 3;
+        }else if(nilaihurufD.equals("C+")){
+            nilaisetaraD = 2.5;
+        }else if(nilaihurufD.equals("C")){
+            nilaisetaraD = 2;
+        }else if(nilaihurufD.equals("D")){
+            nilaisetaraD = 1;
+        }else{
+            nilaisetaraD = 0;
+        }
 
-       if(MasukkanB.equals("A")) {
-        System.out.println("Nilai setara = 4");
-       } else if (MasukkanB.equals("B+")) {
-        System.out.println("Nilai setara = 3,5");
-       } else if (MasukkanB.equals("B")) {
-        System.out.println("Nilai setara = 3");
-       } else if (MasukkanB.equals("C+")) {
-        System.out.println("Nilai setara = 2,5");
-       } else if (MasukkanB.equals("C")) {
-        System.out.println("Nilai setara = 2");
-       } else if (MasukkanB.equals("D")) {
-        System.out.println("Nilai setara = 1");
-       }
+        if(nilaihurufB.equals("A")){
+            nilaisetaraB = 4;
+        }else if(nilaihurufB.equals("B+")){
+            nilaisetaraB = 3.5;
+        }else if(nilaihurufB.equals("B")){
+            nilaisetaraB = 3;
+        }else if(nilaihurufB.equals("C+")){
+            nilaisetaraB = 2.5;
+        }else if(nilaihurufB.equals("C")){
+            nilaisetaraB = 2;
+        }else if(nilaihurufB.equals("D")){
+            nilaisetaraB = 1;
+        }else{
+            nilaisetaraB = 0;
+        }
+
 
        System.out.println("==========================================================================");
        System.out.println("                         hasil Konveksi Nilai");
@@ -114,9 +126,9 @@ public class cm_21 {
        System.out.println("--------------------------------------------------------------------------");
         System.out.println("Mata Kuliah                SKS   Nilai   Huruf   Setara");
         System.out.println("--------------------------------------------------------------------------");
-        System.out.println("Pancasila                  2     " + angka + "      " + angkaP + "       " + angkaP);
-        System.out.println("Dasar Pemrograman          3     " + nilai  + "      " + nilaiD + "       " + nilaiD);
-        System.out.println("Bahasa Inggris             2     " + Masukkan + "      " + MasukkanB + "       " + MasukkanB);
+        System.out.println("Pancasila                  2     " + angka + "      " + nilaihurufP + "       " + nilaisetaraP);
+        System.out.println("Dasar Pemrograman          3     " + nilai  + "      " + nilaihurufD + "       " + nilaisetaraD);
+        System.out.println("Bahasa Inggris             2     " + Masukkan + "      " + nilaihurufB + "       " + nilaisetaraB);
         System.out.println("--------------------------------------------------------------------------");
 
         int skspancasila= 2;
@@ -139,8 +151,6 @@ public class cm_21 {
             status = "Tidak Lulus";
         }
         System.out.println("Status Semester : " + status);
-        
-
     }
 }
     
