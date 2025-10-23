@@ -1,11 +1,15 @@
 package P9;
+
 import java.util.Scanner;
 public class SiakadWhile21 {
    public static void main(String[] args) {
+
     int nilai, jml, i = 0;
     Scanner Akbar21 = new Scanner(System.in);
+
     System.out.print("Masukkan jumlah mahasiswa: ");
     jml = Akbar21.nextInt();
+    
     while (i < jml) {
         System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
         nilai= Akbar21.nextInt();
@@ -13,6 +17,7 @@ public class SiakadWhile21 {
             System.out.println("Nilai tidak valid. Masukkan lagi nilai yang tidak valid!");
             continue;
         }
+
         if (nilai > 80 && nilai <= 100) {
             System.out.println("Nilai mahasiswa ke-" + (i + 1) + "adalah A");
             System.out.println("Bagus pertahankan nilainya");
@@ -31,5 +36,7 @@ public class SiakadWhile21 {
         }
         i++;
     }
-    } 
+
+    }
+     
 }
