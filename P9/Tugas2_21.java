@@ -12,8 +12,12 @@ public class Tugas2_21 {
         String jeniskendaraan;
 
 do {
-    System.out.println("Masukkan jenis kendaraan (mobil/motor):");
+    System.out.println("Masukkan jenis kendaraan mobil/motor (ketik 'batal' untuk keluar):");
     jeniskendaraan = Akbar21.nextLine();
+    if (jeniskendaraan.equalsIgnoreCase("batal")) {
+        System.out.println("Transaksi dibatalkan");
+        break;
+    }
     System.out.println("Masukkan durasi (jam): ");
     durasi = Akbar21.nextInt();
 
