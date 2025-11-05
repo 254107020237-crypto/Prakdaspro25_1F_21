@@ -6,8 +6,8 @@ public class NilaiKelompok21 {
     public static void main(String[] args) {
         Scanner Akbar21 = new Scanner(System.in);
 
-        int i=1, j=1, nilai, totalnilai=0;
-        double rataratanilai=0;
+        int i=1, j=1, nilai, totalnilai=0, Kelompoktertinggi = 0;
+        double rataratanilai=0, rataratatertinggi = 0;
             while (i <= 6) {
                 System.out.println("Kelompok " + i);
                 totalnilai = 0;
@@ -17,8 +17,14 @@ public class NilaiKelompok21 {
                     totalnilai += nilai;
                  }
                  rataratanilai = totalnilai / 5.0;
-                 System.out.println("Rata-rata nilai kelompok " + i + " = " + rataratanilai);
-                    i++;
+                 System.out.println("Kelompok : " +i+ "Nilai rata rata = " + rataratanilai);
+                 if (rataratanilai >= rataratatertinggi) {
+                    rataratatertinggi = rataratanilai;
+                    Kelompoktertinggi = 1;
+                 }
+                 i++;
+                 System.out.println("Rata rata tertinggi: " + rataratatertinggi + "Nilai rata rata = " );
+                    
             }
     }
 }
