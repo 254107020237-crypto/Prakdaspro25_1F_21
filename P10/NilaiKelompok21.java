@@ -12,7 +12,7 @@ public class NilaiKelompok21 {
                 System.out.println("Kelompok " + i);
                 totalnilai = 0;
                 for (j = 1; j<= 5; j++) {
-                    System.out.print("Nilai dari kelompok peneliti " + j + ": ");
+                    System.out.print("Nilai dari kelompok penelitian" + j + ": ");
                     nilai = Akbar21.nextInt();
                     totalnilai += nilai;
                  }
