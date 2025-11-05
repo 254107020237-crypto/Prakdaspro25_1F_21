@@ -10,6 +10,7 @@ public class P10_Tugas2 {
         if (N < 3) {
             System.out.println("Nilai N minimal harus 3");
         }
+
         for (int i = 1; i <= N; i++) {
             for (int j = 1; j <= N; j++) {
                 if (i == 1 || i == N || j == 1 || j == N) {
