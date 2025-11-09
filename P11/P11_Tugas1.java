@@ -29,7 +29,7 @@ public class P11_Tugas1 {
             total += NilaiMahasiswa[i];
             if (NilaiMahasiswa[i] > NilaiTertinggi) {
                 NilaiTertinggi = NilaiMahasiswa[i];
-            } else {
+            }else{
                 if (NilaiMahasiswa[i] > NilaiTerendah) {
                     NilaiTerendah = NilaiMahasiswa [i];
                 }

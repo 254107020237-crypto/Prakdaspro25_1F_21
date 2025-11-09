@@ -3,7 +3,7 @@ package P7;
 import java.util.Scanner;
 
 public class cm_21 {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner Akbar21 = new Scanner(System.in);
         System.out.println("=====INPUT DATA MAHASISWA=====");
         System.out.print("Masukkan Nama\t:");
