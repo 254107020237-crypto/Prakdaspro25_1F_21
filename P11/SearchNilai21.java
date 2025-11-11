@@ -25,8 +25,15 @@ public class SearchNilai21 {
                 break;
             }
         }
-        System.out.println();
+        if (hasil != 0) {
+         System.out.println();
         System.out.println("Nilai "+key+" Ketemu nilai mahasiswa ke- "+hasil);
         System.out.println();
+        } else {
+            System.out.println();
+            System.out.println("Nilai dicari tidak di temukan");
+            System.out.println();
+        }
+        
     }
 }
