@@ -22,7 +22,7 @@ public class P11_Tugas2 {
         for (int i = 0; i < menu.length; i++) {
             System.out.println((i + 1) + ". " + menu[i]);
         }
-
+        System.out.println("item ");
         System.out.print("Jumlah Kopi : ");
         jumlahKopi = Akbar21.nextInt();
         System.out.print("jumlah Teh : ");
@@ -40,6 +40,7 @@ public class P11_Tugas2 {
         System.out.println("-------- Nota Pembelian --------");
         System.out.println("Nama Pelanggan : "+namapelanggan);
         System.out.println("--------------------------------");
+        System.out.println("------------- Item -------------");
 
         if (jumlahKopi > 0) {
              System.out.println("Kopi : " + jumlahKopi + " x Rp " + 15000 + " = Rp " + (jumlahKopi * 15000));
