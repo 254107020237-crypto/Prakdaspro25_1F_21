@@ -13,7 +13,7 @@ public class ArrayNilai21 {
             nilaiAkhir[i] = Akbar21.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < nilaiAkhir.length; i++) {
             if (nilaiAkhir[i] > 70) {
                 
             }
