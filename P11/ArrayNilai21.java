@@ -14,7 +14,10 @@ public class ArrayNilai21 {
         }
 
         for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai akhir ke-"+i+" adalah "+nilaiAkhir[i]);
+            if (nilaiAkhir[i] > 70) {
+                
+            }
+            System.out.println("Nilai akhir ke-"+i+" lulus ");
         }
     }
 }
