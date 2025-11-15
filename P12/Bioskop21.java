@@ -14,15 +14,10 @@ public class Bioskop21 {
         Penonton [3] [0] = "Gisel";
         Penonton [3] [1] = "Hana";
 
-        System.out.println(Penonton.length);
-        
-       for (String [] BarisPenonton : Penonton) {
-        System.out.println("Panjang Baris : " + BarisPenonton.length);
-       }
+        System.out.println("Jumlah Baris : " + Penonton.length);
 
-       System.out.println("Penonton pada baris ke - 3 :");
-       for (String i : Penonton[2]) {
-        System.out.println(i);
+       for (int i = 0; i < Penonton.length; i++) {
+            System.out.println("Penonton Pada Baris Ke - " + (i+1) + " : " + String.join(", ", Penonton[i]));
        }
 
         System.out.printf("%s \t %s \n", Penonton [0] [0], Penonton [0] [1]);
