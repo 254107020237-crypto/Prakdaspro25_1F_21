@@ -12,10 +12,12 @@ public class Bioskop21 {
         Penonton [2] [0] = "Eka";
         Penonton [2] [1] = "Farhan";
         Penonton [3] [0] = "Gisel";
+        Penonton [3] [1] = "Hana";
 
         System.out.printf("%s \t %s \n", Penonton [0] [0], Penonton [0] [1]);
         System.out.printf("%s \t %s \n", Penonton [1] [0], Penonton [1] [1]);
         System.out.printf("%s \t %s \n", Penonton [2] [0], Penonton [2] [1]);
         System.out.printf("%s \t %s \n", Penonton [3] [0], Penonton [3] [1]);
+
     }
 }
