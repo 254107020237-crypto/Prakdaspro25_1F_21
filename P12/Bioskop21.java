@@ -17,7 +17,7 @@ public class Bioskop21 {
         System.out.println("Jumlah Baris : " + Penonton.length);
 
        for (int i = 0; i < Penonton.length; i++) {
-            System.out.println("Penonton Pada Baris Ke - " + (i+1) + " : " + String.join(", ", Penonton[i]));
+            System.out.println("Penonton Pada Baris Ke - " + (i+1) + " : " + String.join(" , ", Penonton[i]));
        }
 
         System.out.printf("%s \t %s \n", Penonton [0] [0], Penonton [0] [1]);
