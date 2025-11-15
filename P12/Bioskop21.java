@@ -20,6 +20,11 @@ public class Bioskop21 {
         System.out.println("Panjang Baris : " + BarisPenonton.length);
        }
 
+       System.out.println("Penonton pada baris ke - 3 :");
+       for (int i = 0; i < Penonton[2].length; i++) {
+        System.out.println(Penonton[2][i]);
+       }
+
         System.out.printf("%s \t %s \n", Penonton [0] [0], Penonton [0] [1]);
         System.out.printf("%s \t %s \n", Penonton [1] [0], Penonton [1] [1]);
         System.out.printf("%s \t %s \n", Penonton [2] [0], Penonton [2] [1]);
