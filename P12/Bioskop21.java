@@ -15,11 +15,10 @@ public class Bioskop21 {
         Penonton [3] [1] = "Hana";
 
         System.out.println(Penonton.length);
-        System.out.println(Penonton[0].length);
-        System.out.println(Penonton[1].length);
-        System.out.println(Penonton[2].length);
-        System.out.println(Penonton[3].length);
-
+        
+        for (int i = 0; i < Penonton.length; i++) {
+            System.out.println("Panjang baris ke - " + (i+1) + " : " + Penonton[i].length);
+        }
 
         System.out.printf("%s \t %s \n", Penonton [0] [0], Penonton [0] [1]);
         System.out.printf("%s \t %s \n", Penonton [1] [0], Penonton [1] [1]);
