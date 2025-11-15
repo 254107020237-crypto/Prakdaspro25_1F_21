@@ -21,8 +21,8 @@ public class Bioskop21 {
        }
 
        System.out.println("Penonton pada baris ke - 3 :");
-       for (int i = 0; i < Penonton[2].length; i++) {
-        System.out.println(Penonton[2][i]);
+       for (String i : Penonton[2]) {
+        System.out.println(i);
        }
 
         System.out.printf("%s \t %s \n", Penonton [0] [0], Penonton [0] [1]);
