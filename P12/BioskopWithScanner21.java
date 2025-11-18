@@ -40,7 +40,12 @@ public class BioskopWithScanner21 {
                         if (Next.equalsIgnoreCase("n")) {
                             break;
                         }
+                         if (Penonton[Baris - 1][Kolom-1]!=null) {
+                            System.out.println("Kursi Sudah Terisi Silakan Memilih Kursi Yang Belum Terisi");
+                            continue;
+                       }
                        break;
+    
                     }
 
                     case 2:
