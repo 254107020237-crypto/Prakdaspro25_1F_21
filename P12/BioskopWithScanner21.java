@@ -53,6 +53,9 @@ public class BioskopWithScanner21 {
                     for (int i = 0; i < Penonton.length; i++) {
                         for (int j = 0; j < Penonton[i].length; j++) {
                              Nama = Penonton[i][j];
+                             if (Nama == null) {
+                                Nama = "***";
+                             }
                              System.out.println("Baris " + (i + 1) + " Kolom " + (j + 1) + " : " + Nama);
                         }
                     }
