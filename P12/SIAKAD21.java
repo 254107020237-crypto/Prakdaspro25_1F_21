@@ -6,38 +6,34 @@ public class SIAKAD21 {
     public static void main(String[] args) {
         Scanner Akbar21 = new Scanner(System.in);
 
-        double TotalPerSiswa=0, TotalPerMatkul =0;
-        int [][] Nilai = new int[4][3];
+        double TotalPerSiswa = 0;
+        int JumlahMahasiswa, JumlahMatkul;
+        System.out.print("Masukkan Jumlah Mahasiswa : ");
+        JumlahMahasiswa = Akbar21.nextInt();
+        System.out.print("Masukkan Jumlah Mata Kuliah : ");
+        JumlahMatkul = Akbar21.nextInt();
+        int [][] Nilai = new int[JumlahMahasiswa][JumlahMatkul];
 
         for (int i = 0; i < Nilai.length; i++) {
-            System.out.println("Input Nilai Mahasiswa ke -" + (i + 1));
-
+            System.out.println("Input Nilai Mahasiswa ke - " + (i + 1));
+            
             for (int j = 0; j < Nilai[i].length; j++) {
                 System.out.print("Nilai Mata Kuliah " + (j + 1) + " : ");
                 Nilai [i][j] = Akbar21.nextInt();
-            }
-        }
-        for (int i = 0; i < Nilai.length; i++) {
-            System.out.println("Input Nilai Mata Kuliah ke - : " + (i + 1));
-            TotalPerSiswa = 0;
-
-            for (int j = 0; j < Nilai[i].length; j++) {
-                System.out.println("Nilai Mata Kuliah  " + (j+1) + " : ");
-                Nilai[i][j] = Akbar21.nextInt();
                 TotalPerSiswa += Nilai[i][j];
             }
-            System.out.println("Nilai Rata Rata : " + TotalPerSiswa/3);
+            System.out.println("Nilai Rata Rata : " + TotalPerSiswa/JumlahMatkul);
         }
-        System.out.println("\n==============================");
-        System.out.println("Rata-rata Nilai Setiap Mata Kuliah :");
+        System.out.println("===========================================");
+        System.out.println("Rata Rata Nilai Setiap Mata Kuliah : ");
+        
+        for (int j = 0; j < JumlahMatkul; j++) {
+            double TotalPerMatkul = 0;
 
-        for (int j = 0; j < 3; j++) {
-            TotalPerMatkul = 0;
-
-            for (int i = 0; i < 4; i++) {
-                TotalPerMatkul+= Nilai[i][j];
+            for (int i = 0; i < JumlahMahasiswa; i++) {
+                TotalPerMatkul += Nilai[i][j];
             }
-            System.out.println("Mata Kuliah " + (j + 1) + ": " + TotalPerMatkul / 4);
+            System.out.println("Mata Kuliah " + (j+1) + " : " + TotalPerMatkul/JumlahMahasiswa);
         }
     }
 }

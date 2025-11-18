@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SIAKAD21",
+            "request": "launch",
+            "mainClass": "P12.SIAKAD21",
+            "projectName": "Prakdaspro25_1F_21_8c426889"
+        },
+        {
+            "type": "java",
             "name": "BioskopWithScanner21",
             "request": "launch",
             "mainClass": "P12.BioskopWithScanner21",

@@ -11,10 +11,11 @@ public class BioskopWithScanner21 {
         String Nama, Next;
 
         while (true) {
-            System.out.println("===== Menu Bioskop =====");
+            System.out.println("======= Menu Bioskop =======");
             System.out.println("1. Input data Penonton");
             System.out.println("2. Tampilan Daftar Penonton");
             System.out.println("3. Exit/Keluar");
+            System.out.println("============================");
             System.out.print("Pilih Menu : ");
             Menu = Akbar21.nextInt();
             Akbar21.nextLine();
@@ -30,17 +31,17 @@ public class BioskopWithScanner21 {
                         System.out.print("Masukkan Kolom : ");
                         Kolom = Akbar21.nextInt();
                         Akbar21.nextLine();
-
-                        Penonton[Baris-1][Kolom-1]= Nama;
+            
+                        Penonton[Baris-1][Kolom-1] = Nama;
 
                         System.out.print("Input Penonton Lainnya? (y/n): ");
                         Next = Akbar21.nextLine();
 
-                       if (Next.equalsIgnoreCase("n")) {
+                        if (Next.equalsIgnoreCase("n")) {
                             break;
-                       }
+                        }
+                       break;
                     }
-                    break;
 
                     case 2:
                     System.out.println("Menu 2 Tampilan Daftar Penonton : ");
@@ -56,7 +57,7 @@ public class BioskopWithScanner21 {
                     System.out.println("Terimah Kasih");
                     Akbar21.close();
                     return;
-            
+
                 default:
                     System.out.println();
             }
@@ -65,4 +66,3 @@ public class BioskopWithScanner21 {
 }
 
 
-//comit pertanyaan 3 
