@@ -5,7 +5,8 @@ public class Kafe21 {
         Menu("Andi", true);
     }
     public static void Menu(String NamaPelanggan, Boolean isMember) {
-        System.out.println("Selamat Datang, " + NamaPelanggan + "!");        if (isMember) {
+        System.out.println("Selamat Datang, " + NamaPelanggan + "!");       
+         if (isMember) {
             System.out.println("Anda Adalah Member, Dapatkan Diskon 10% Untuk Setiap Pembelian!");
         }
         System.out.println("===== MENU RESTO KAFE =====");
