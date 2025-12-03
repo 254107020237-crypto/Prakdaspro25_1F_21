@@ -4,29 +4,31 @@ import java.util.Scanner;
 
 public class HitungBalok21 {
     public static void main(String[] args) {
-        Scanner Akbar21 = new Scanner(System.in);
-         int p, l, t, L, vol;
+    Scanner input = new Scanner (System.in);
+    int p, l, t, L, vol;
 
-         System.out.println("Masukkan Panjang");
-         p = Akbar21.nextInt();
-         System.out.println("Masukkan Lebar");
-         l = Akbar21.nextInt();
-         System.out.println("Masukkan Tinggi");
-         t = Akbar21.nextInt();
+    System.out.print("Masukan Panjang : ");
+    p = input.nextInt();
 
-         L =  (p * l);
-         System.out.println("Luas Persegi Adalah " + L);
-         vol = (t * p * l);
-         System.out.println("Volume Balok Adalah " + vol);
+    System.out.print("Masukan Lebar : ");
+    l = input.nextInt();
 
-         Akbar21.close();
+    System.out.print("Masukan tinggi : ");
+    t = input.nextInt();
+
+    L = hitungLuas(p, l);
+    System.out.println("Luas persegi panjang adalah " + L);
+    vol = hitungVolume(t, p, l);
+    System.out.println("Volume balok adalah " + vol);
+
+    input.close();
     }
-    //static int HitungLuas(int pjg, int lb) {
-        //int Luas = pjg * lb;
-        //return Luas;
-    //}
-    //static int HitungVolume(int tinggi, int a, int b) {
-        //int Volume = HitungLuas(a, b) * tinggi;
-        //return Volume;
-    //}
+    static  int  hitungLuas(int pjg, int lb){
+    int Luas = pjg * lb;
+     return Luas;
+    }
+    static int hitungVolume(int tinggi, int a, int b){
+    int volume = hitungLuas(a, b) * tinggi;
+    return volume;
+    }
 }
