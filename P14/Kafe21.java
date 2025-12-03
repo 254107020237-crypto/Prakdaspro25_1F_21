@@ -39,13 +39,6 @@ public class Kafe21 {
          if (isMember) {
             System.out.println("Anda Adalah Member, Dapatkan Diskon 10% Untuk Setiap Pembelian!");
         }
-        if (KodePromo.equals("Diskon50%")) {
-            System.out.println("Selamat Anda Mendapatkan Diskon 50%");
-        } else if (KodePromo.equals("Diskon30%")) {
-            System.out.println("Selamat Anda Mendapatkan Diskon 30%");
-        } else {
-            System.out.println("Kode Promo Invalid");
-        }
         System.out.println("===== MENU RESTO KAFE =====");
         System.out.println("1. Kopi Hitam - Rp. 15,000");
         System.out.println("2. Cappuccino - Rp. 20,000");
