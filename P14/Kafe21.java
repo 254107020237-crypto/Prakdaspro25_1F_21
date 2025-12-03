@@ -1,9 +1,8 @@
 package P14;
 
 import java.util.Scanner;
-
 public class Kafe21 {
-   public static int HitungTotalharga(int PilihanMenu, int BanyakItem) {
+   public static int HitungTotalharga21(int PilihanMenu, int BanyakItem) {
         int [] HargaItem = {15000, 20000, 22000, 12000, 10000, 18000};
 
         int HargaTotal = HargaItem[PilihanMenu - 1] * BanyakItem;
@@ -12,15 +11,28 @@ public class Kafe21 {
     public static void main(String[] args) {
         Scanner Akbar21 = new Scanner(System.in);
         Menu("Andi", true, "Diskon 50%");
-        Menu("Budi", true, "Diskon 30%");
         System.out.print("\nMasukkan Nomor Yang Ingin Anda Pesan : ");
         int PilihanMenu = Akbar21.nextInt();
         System.out.print("\nJumlah Item Yang Ingin Di Pesan : ");
         int BanyakItem = Akbar21.nextInt();
+        System.out.print("Masukkan Kode Diskon : ");
+        String KodeDiskon = Akbar21.next();
+        
+        int TotalHarga = HitungTotalharga21(PilihanMenu, BanyakItem);
 
-        int TotalHarga = HitungTotalharga(PilihanMenu, BanyakItem);
-        System.out.println("Total Harga Untuk Pesanan Anda :  Rp" + TotalHarga);
+        double Diskon = 0;
+        if (KodeDiskon.equals("50")) {
+            Diskon = 0.50;  
+            System.out.println("Selamat Anda Mendapatkan Diskon 50 Persen");
+        } else if (KodeDiskon.equals("30")) {
+            Diskon = 0.30;  
+            System.out.println("Selamat Anda Mendapatkan Diskon 30 Persen");
+        } else {
+            System.out.println("Kode Promo Invalid");
+        }
+        double TotalHargaAkhir = TotalHarga - (TotalHarga * Diskon);
 
+        System.out.println("Total Harga Untuk Pesanan Anda : Rp " + (int) TotalHargaAkhir);
     }
     public static void Menu(String NamaPelanggan, Boolean isMember, String KodePromo) {
         System.out.println("Selamat Datang, " + NamaPelanggan + "!");       
