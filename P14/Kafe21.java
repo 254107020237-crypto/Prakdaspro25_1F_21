@@ -2,7 +2,8 @@ package P14;
 
 public class Kafe21 {
     public static void main(String[] args) {
-        Menu("Andi", true, "Diskon50%");
+        Menu("Andi", true, "Diskon 50%");
+        Menu("Budi", true, "Diskon 30%");
     }
     public static void Menu(String NamaPelanggan, Boolean isMember, String KodePromo) {
         System.out.println("Selamat Datang, " + NamaPelanggan + "!");       
