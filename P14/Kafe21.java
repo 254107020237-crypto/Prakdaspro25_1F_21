@@ -13,8 +13,15 @@ public class Kafe21 {
         Menu("Andi", true, "Diskon 50%");
         System.out.print("\nMasukkan Nomor Yang Ingin Anda Pesan : ");
         int PilihanMenu = Akbar21.nextInt();
-        System.out.print("\nJumlah Item Yang Ingin Di Pesan : ");
+        int TambahItem = 0;
+        for (int i = 0; i < PilihanMenu; i++) {
+            System.out.print("Item Tambahan " + (i + 1) + " : ");
+            TambahItem = Akbar21.nextInt(); 
+        break;    
+        }
+        System.out.print("Jumlah Item Yang Ingin Di Pesan : ");
         int BanyakItem = Akbar21.nextInt();
+        
         System.out.print("Masukkan Kode Diskon : ");
         String KodeDiskon = Akbar21.next();
         
@@ -32,7 +39,8 @@ public class Kafe21 {
         }
         double TotalHargaAkhir = TotalHarga - (TotalHarga * Diskon);
 
-        System.out.println("Total Harga Untuk Pesanan Anda : Rp " + (int) TotalHargaAkhir);
+        System.out.println("Total Harga Untuk Pesanan Anda : Rp " + BanyakItem + (int)TotalHargaAkhir);
+        System.out.println("Keseluruhan Item Anda : " + BanyakItem + TambahItem);
     }
     public static void Menu(String NamaPelanggan, Boolean isMember, String KodePromo) {
         System.out.println("Selamat Datang, " + NamaPelanggan + "!");       
