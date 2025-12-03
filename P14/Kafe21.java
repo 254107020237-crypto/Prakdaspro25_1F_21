@@ -1,9 +1,26 @@
 package P14;
 
+import java.util.Scanner;
+
 public class Kafe21 {
+   public static int HitungTotalharga(int PilihanMenu, int BanyakItem) {
+        int [] HargaItem = {15000, 20000, 22000, 12000, 10000, 18000};
+
+        int HargaTotal = HargaItem[PilihanMenu - 1] * BanyakItem;
+        return HargaTotal;
+   }
     public static void main(String[] args) {
+        Scanner Akbar21 = new Scanner(System.in);
         Menu("Andi", true, "Diskon 50%");
         Menu("Budi", true, "Diskon 30%");
+        System.out.print("\nMasukkan Nomor Yang Ingin Anda Pesan : ");
+        int PilihanMenu = Akbar21.nextInt();
+        System.out.print("\nJumlah Item Yang Ingin Di Pesan : ");
+        int BanyakItem = Akbar21.nextInt();
+
+        int TotalHarga = HitungTotalharga(PilihanMenu, BanyakItem);
+        System.out.println("Total Harga Untuk Pesanan Anda :  Rp" + TotalHarga);
+
     }
     public static void Menu(String NamaPelanggan, Boolean isMember, String KodePromo) {
         System.out.println("Selamat Datang, " + NamaPelanggan + "!");       
